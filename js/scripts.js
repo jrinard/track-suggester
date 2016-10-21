@@ -26,7 +26,6 @@ $(document).ready(function(){ // Function that waits for the document to load be
       $(".name").text(nameInput);// Assigns inputed form name into class
       $("#results").fadeIn();//shows div
       $(finaltrack).show(); // revealing the div as a result to the user
-      $("#not").show(); // revealing the div as a result to the user
 
     event.preventDefault();// Makes the submit event handler not disapear when pressed.
   });
