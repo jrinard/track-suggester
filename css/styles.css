@@ -98,6 +98,9 @@ img{
 button{
   margin: 20px 20px;
 }
+.container {
+  max-width: 500px;
+}
 #return {
     margin: 20px;
 }
@@ -114,11 +117,10 @@ button{
   background-color: #3E6894;
   height: 200px;
   background-size: 100%;
-}
-.jumbotron {
-    color:#eee;
-    margin:10px 0px 0px 0px;
-    background-size: 100%;
+  color:#eee;
+  margin:10px 0px 0px 0px;
+  background-size: 100%;
+  max-width: 500px;
 }
 #content{
   background-color: #222;
@@ -142,7 +144,34 @@ button{
   margin:10px 0px;
   border-radius: 8px;
 }
-
+.top {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+}
+.top h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.top p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.top > hr {
+  border-top-color: #d5d5d5;
+}
+.container .top,
+.container-fluid .top {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.top .container {
+  max-width: 100%;
+}
 @media screen and (max-width:480px) {
  img {
     display: none;
