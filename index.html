@@ -11,76 +11,71 @@
   <body>
     <div class="container">
       <div id="main">
-        <h1>Track Suggester</h1><hr>
-        <p> When determining which track you should take consider the following questions to help narrow down your choice.</p>
+        <div id="top" class="jumbotron">
+          <h1>Track Suggester</h1>
+          <p class="subtext"> When determining which track you should take consider the following questions to help narrow down your choice.</p>
+        </div><!-- Top-->
+      <div id="content" class="well">
         <form>
           <div class="form-group">
-            <label for="name">Name</label>
+            <h4 for="name">Name</h4>
             <input id="name" class="form-control" type="text">
-          </div><hr>
+          </div>
           <h4>Which of these sounds more appealing to you?</h4>
-          <select class="form-control" id="q1">
+          <select class="form-control" id="question1">
             <option value="1">Easier to learn with forgiving code</option>
             <option value="2">Strong logic and code structure</option>
             <option value="3">Code focused on interface and user interaction</option>
           </select>
           <h4>What kind of company would you like to work for?</h4>
-          <select class="form-control" id="q2">
+          <select class="form-control" id="question2">
             <option value="1">New and upcoming with potential to soar</option>
             <option value="2">Tried and true company with long track record</option>
             <option value="3">Freelancer or tiny team</option>
           </select>
           <h4>What kind of projects do you want to work on?</h4>
-          <select class="form-control" id="q3">
+          <select class="form-control" id="question3">
             <option value="1">Interactive web applications</option>
             <option value="2">Internal software</option>
             <option value="3">Layouts, colors, and Designs</option>
           </select>
           <h4>Do you like puzzles and word problems?</h4>
-          <select class="form-control" id="q4">
+          <select class="form-control" id="question4">
             <option value="1">No</option>
-            <option value="5">Yes</option>
+            <option value="1">Yes</option>
             <option value="0">Neither</option>
           </select>
           <h4>Does one of these tracks sound interesting to you?</h4>
-          <select class="form-control" id="q5">
+          <select class="form-control" id="question5">
             <option value="-4">Ruby on Rails</option>
-            <option value="2">C# .Net Framework</option>
+            <option value="0">C# .Net Framework</option>
             <option value="4">CSS and Design</option>
           </select>
-
-
-        <button type="submit" class="btn">Submit</button>
-        </form>
-      </div>
-
-
-      <div id="results">
-        <h1>Conclusion</h1>
-            <h3><span class="name"></span></h3>
-
-      <div id="ruby">
-        <h2>Ruby on Rails</h2>
-        <img src="img/ruby.png" alt="ruby">
-      </div>
-      <div id="c">
-        <h2>C# .Net </h2>
-        <img src="img/c.jpg" alt="c#">
-      </div>
-      <div id="design">
-        <h2>Design</h2>
-        <img src="img/design.jpg" alt="design">
-      </div>
-
-      <input type="button" class="btn" value="Restart" onClick="window.location.reload()">
-
-    </div><!-- Results -->
-
-
-
-
-
-
-    </div>
+          <button type="submit" class="btn">Submit</button>
+        </form><br>
+      </div> <!-- content -->
+      </div><!-- main -->
+      <div id="results" class="well2">
+        <h2>Your Results</h2>
+          <h3>
+            <span class="resulttext">Thank you </span>
+            <span class="name"></span>
+            <span class="resulttext"> for taking our questionaire.</span>
+          </h3>
+        <div id="ruby">
+          <h2>Ruby on Rails</h2>
+          <img src="img/ruby.png" alt="ruby">
+        </div>
+        <div id="c">
+          <h2>C# .Net </h2>
+          <img src="img/c.jpg" alt="c#">
+        </div>
+        <div id="design">
+          <h2>Design</h2>
+          <img src="img/design.jpg" alt="design">
+        </div>
+      <input id ="return" type="button" class="btn" value="Restart" onClick="window.location.reload()">
+      </div><!-- Results -->
+    </div><!-- Container -->
   </body>
 </html>
